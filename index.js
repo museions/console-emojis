@@ -1431,6 +1431,7 @@ const commands = [
   { emoji: '🇾🇪', name: 'yemen' },
   { emoji: '🇿🇲', name: 'zambia' },
   { emoji: '🇿🇼', name: 'zimbabwe' },
+  { emoji: '🇿🇼', name: 'zimba' },
 ];
 
 
