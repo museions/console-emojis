@@ -1435,6 +1435,5 @@ const commands = [
 
 
 {
-  // Create custom commands
   commands.forEach(({ name, emoji }) => console[name] = (...args) => console.log(emoji , args)); 
 }
