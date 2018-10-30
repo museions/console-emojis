@@ -1,4 +1,5 @@
-const commands = [
+;(function(){
+var commands = [
   { emoji: '💯', name: '100' },
   { emoji: '🔢', name: '1234' },
   { emoji: '😀', name: 'grinning' },
@@ -1433,9 +1434,15 @@ const commands = [
   { emoji: '🇿🇼', name: 'zimbabwe' },
   { emoji: '🇿🇼', name: 'zimba' },
   { emoji: '🇿🇼', name: 'zim' },
+  { emoji: '⌨️', name: 'keyboard' },
+  { emoji: '🖱️️', name: 'mouse' },
+  { emoji: '🎩', name: 'hat' },
+  { emoji: '🦅', name: 'eagle' },
 ];
-
-
-{
-  commands.forEach(({ name, emoji }) => console[name] = (...args) => console.log(emoji , args)); 
-}
+  commands.forEach(function(command){
+    var name =command.name,emoji=command.emoji;
+      console[name] = function(args){
+        console.log(emoji,args)
+      }
+  });
+}());
